@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0">
+  <title>Static Characteristics</title>
+ <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <div class="all">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6 column1">
+        <div class="left">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <h4 class="level1">Level 1 </h4>
+              <h4 class="charecter">Static Characteristics</h4>
+              <img class="image" style="margin-top:5vh;" src="images/Rtd.svg">
+              <a class="anchor" href="dynamic.html">
+                <button class="btn btn-primary" type="submit" id="level2" onclick="dstore()">Level 2</button>
+              </a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="panel">
+                <h4 class="control" style=" opacity:0;">Control Panel</h4>
+                  <h2 class="control controlR">RTD</h2>
+                <form id="myForm">
+                  <label for="material">Material:</label>
+                  <select id="material" name="material" onchange="change()">
+                    <option id="selected" selected>Select Material</option>
+                    <option value="0">Platinum</option>
+                    <option value="1">Copper</option>
+                    <option value="2">Nickel</option>
+                    <option value="3">Silver</option>
+                  </select>
+                  <h6 id="alphavalue"></h6>
+                  <h6 id="temp"></h6>
+                  <br>
+                  <div class="rat0">
+                    <label>R<sub>0</sub> :</label>
+                    <input id="ratzero" type="number" placeholder="Input" min="0" max="1800">
+                  </div>
+                  <br>
+                  <div class="temperature">
+                    <label>Temp.(&#8451;) :</label>
+                    <input id="inputtemp" type="number" placeholder="Input" min="-200">
+                  </div>
+                  <br>
+                  <div class="button">
+                    <button type="button" class="btn btn-dark" id="resett" onclick="reset()">Reset</button>
+                    <button type="button" class="btn btn-danger" id="graph" onclick="plot()">Graph</button>
+                    <button type="button" class="btn btn-success" id="find" value="button" onclick="response()">Find
+                      R<sub>t</sub></button>
+                  </div>
+                  <br>
+                  <div class="ratT">
+                    <lebel>R<sub>t</sub> :</lebel>
+                    <input id="rt" disabled='true' value="">
+                  </div>
+                  
+                </form>
+                <div>
+                  <h5 class='selected'><u>Selected Values</u></h5>    <h2 class='selected' style="top: 83%; margin-left:-1vh; opacity:0.6; font-size:3vh; background-color:green; padding:0px 2vh;">GRAPH</h2>
+                  <div id="div1"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <canvas id="myChart" width="80" height="75" style="display: block; height: 315px; width: 343px;"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="right column2">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 ">
+              <h4 class="level1">Level 1 </h4>
+              <h4 class="charecter">Static Characteristics</h4>
+              <img class="image" src="images/thermo.svg">
+            
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class= 'column2'>
+                <h4 class="control" style='margin-top:27px;opacity:0;'>Control Panel</h4>
+                <h2 class="control controlR" style="margin-left:-10vh;">Thermocouple</h2>
+                <form id="myForm">
+                  <label for="material">Thermocouple type:</label>
+                  <select id="material2" name="material" onchange="change2()">
+                    <option id="selected" selected>Select Type</option>
+                    <option value="0">J</option>
+                    <option value="1">K</option>
+                    <option value="2">R</option>
+                    <option value="3">S</option>
+                    <option value="4">T</option>
+                  </select>
+                  <h3></h3>
+                  <h6 id="alphavalue2"></h6>
+
+                  <br>
+                  <div class="rat0">
+                    <label>Reference Temp :</label>
+                    <input id="ratzero2" type="number" placeholder="Input" min="0" max="1800">
+                  </div>
+                  <br>
+                  <div class="temperature2">
+                    <label>Temp.(&#8451;) :</label>
+                    <input id="inputtemp2" type="number" placeholder="Input" min="-200">
+                  </div>
+                  <br>
+                  <div class="ratT2">
+                    <lebel>Enter Input Value mV :</lebel>
+                    <input id="rt2" placeholder="Input" value="">
+                  </div>
+                  <div class="button button1">
+                    <button type="button" class="btn btn-dark" id="resett" onclick="reset()">Reset</button>
+                    <button type="button" class="btn btn-danger" id="graph" onclick="plot2()" >Graph</button>
+                    <button type="button" class="btn btn-success" id="find" value="button" onclick="response2()">Find
+                      R<sub>t</sub></button>
+                  </div>
+
+                </form>
+                <div>
+                  <h3 class='selected' style="top: 64%;"><u>Selected Values</u></h3>
+                     <h2 class='selected' style="top: 65%;
+    margin-left: -1vh; opacity:0.6; font-size:3vh; background-color:green; padding:0px 2vh;">GRAPH</h2>
+                  <div id="div2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <canvas id="myChart2" class="chartjs-render-monitor" width="80" height="70" style="display: block; height: 285px; width: 343px;"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+ 
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+  <script type="text/javascript" src="js/index.js"></script>
+  
+  <script type="text/javascript" src="js/chart.js"></script>
+  
+ 
+
+</body>
+
+</html>

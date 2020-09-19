@@ -1,0 +1,324 @@
+.level1{
+    margin-top: 20px;
+    text-decoration: underline;
+    
+}
+.chartjs-render-monitor{
+   width: 100px;
+   height: 150px;
+   margin-right: -10vh;
+}
+
+form
+{
+font-weight: bold;
+color: #2f3134;
+  text-shadow: -1px 2px 2px white;   
+    background: linear-gradient(45deg,#459292,#c3d5e4);
+padding: 20px 20px 8px 10px;
+border-radius: 10px;
+box-shadow: 0px 0px 1px 0px black, 0px 0px 20px 0px inset black;
+}
+
+body{
+width: 100%;  
+height: 100%;  
+position: relative;
+    
+}
+.column1{
+    width: 44%;
+    height: 10vh;
+    transform: scale(1,0.9);
+    position: absolute;
+    top: -8%;
+    left: 5%;
+}
+.column2{
+    width: 40%;
+    height: 70%;
+    position: absolute;
+    top: -2%;
+    left: 51%;
+}
+
+#myChart{
+    background: linear-gradient(45deg, white, transparent);
+    box-shadow: 0px 0px 10px 0px inset black;
+transform: scale(0.7);
+width: 300px;
+ margin-top: -1.3vh;
+height: 220px;
+}
+#myChart2{
+    margin-top: -10vh;
+    background: linear-gradient(45deg, white, transparent);
+    box-shadow: 0px 0px 10px 0px inset black;
+   transform: scale(0.7,0.6);
+
+}
+h4,h5{
+    text-align: center;
+}
+.controlR{
+    text-align: center;
+ position: absolute;
+ left: 37%;
+ letter-spacing: 5px;
+ top: 5%;
+ background-color:#4e9ce6;
+    padding: 5px 15px;
+    border:2px solid white;
+    box-shadow: 0px 2px 10px 0px inset black;
+    border-radius: 5px;
+}
+.charecter{
+    color: black;
+     position: absolute;
+    top: 1%;
+    font-size: 20px;
+    text-shadow: 0px 0px 2px white;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+.all{
+    margin: 30px 3%;
+}
+.level1 {
+    margin: 20px 0px 0px -77px;
+         color: black;
+    text-shadow: 0px 0px 2px white;
+    text-decoration: underline;
+}
+#level{
+   
+   margin-top: 40px;
+   margin-left: 33.3%;
+}
+#level2{
+margin: 20px 0px 0px -77px;
+    color: white;
+    text-shadow: 0px 0px 2px black;
+    top: 43.3%;
+    background: linear-gradient(45deg, black, white);
+    z-index: 2;
+    padding: 10px 40px;
+    position: absolute;
+    margin-left: -36.3%;
+ }
+
+.anchor{
+    color: #ffffff;
+}
+
+.control{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    text-shadow: 0px 0px 2px #494949;
+    text-decoration: underline;
+}
+
+
+.left{
+    width: 92%;
+    height: 120vh;
+    position: absolute;
+    top: 5%;
+       background: linear-gradient(to top,#6dd4e5, #a9e0e9, #a9e0e9);
+    left: -9%;
+   transform: scale(1.1,1.2);
+background-color: #cecaca;
+padding: 20px;
+border-radius: 20px;
+box-shadow: 10px 10px 8px #494949;
+margin: 10px;
+}
+.selected{
+ color: black;
+ font-size: 16px;
+   left: -44%;
+    top: 74%;
+    text-align: center;
+    margin-top: auto;
+ text-shadow: -1px -1px 2px white;
+}
+
+.panel{
+ position: absolute;
+    left: 52%;
+    top: 1%;
+}
+button{
+ padding: 7px;
+ color: white;
+ text-shadow: -2px 0px 2px black;
+font-weight: bold;
+}
+button:hover{
+
+ box-shadow: 0px 0px 10px 0px inset black;
+}
+
+.right{
+        width: 47%;
+      height: 115vh;
+background: linear-gradient(to top,#6dd4e5, #a9e0e9, #a9e0e9);
+       transform: scale(1.1);
+    background-color: #cecaca;
+    padding: 20px;
+    border-radius: 20px;
+box-shadow: 10px 10px 8px #474747;
+margin: 1px 10px;
+
+    }
+
+
+.image{
+    margin-top: 3vh;
+    margin-left: -2vh;
+    margin-bottom: 4vh;
+    border-radius: 5px;
+       width: 50%;
+    height: 40vh;
+box-shadow: 0px 1px 300px 100px inset white; 
+border: 10px solid cornflowerblue;   
+}
+#graph{
+margin-left: inherit auto;
+}
+
+input{
+  float: right;
+  font-weight: bold;
+  text-shadow: -2px 0px 2px white;  
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#material{
+    width: 60%;
+    align-content: right;
+    float: right;
+    height: 30px;
+    padding-left: 10%;
+        margin-bottom: 2%;    
+}
+
+#material2{
+    width: 60%;
+    align-content: right;
+    float: right;
+    height: 30px;
+    padding-left: 10%;
+    
+}
+
+#alphavalue2{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: red;   
+}
+#alphavalue,#temp{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: red;   
+}
+
+.rat0{
+    margin-bottom: -10px;
+   margin-left: 20px;
+}
+
+#ratzero{
+width: 60% ;
+}
+
+#ratzero2{
+    width: 60% ;
+    }
+
+.temperature{
+margin-top: 20px;
+margin-bottom: 25px;
+}
+
+.temperature2{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    }
+
+#inputtemp{
+    width:60%
+}
+
+#inputtemp2{
+    width:60%
+}
+
+button{
+    border-radius: 10px;
+    background-color: rgb(144, 144, 241);
+}
+
+#find{
+float: right;
+}
+
+.ratT{
+    
+    margin-bottom: 30px;
+}
+
+.ratT2{
+    
+    margin-bottom: 70px;
+}
+#div1{
+  
+    border-radius: 5px;
+   text-align: center;
+       font-weight: bold;
+    text-shadow: 0px 0px 2px #f8f2f2;
+    color: #1e221e;
+    font-size: larger;
+   margin-top: 0px;
+   margin-bottom: 20px;
+}
+
+#div2{
+   
+    border-radius: 5px;
+   text-align: center;
+     font-size: larger;
+  font-weight: bold;
+    text-shadow: 0px 0px 2px #f8f2f2;
+    color: #1e221e;
+   margin-top: 0px;
+   margin-bottom: 20px;
+}
+
+.button{
+    margin-bottom: 30px;
+}
+
+.button1{
+   margin-bottom: 9px;
+    margin-top: -9px;
+}
+
+
+#rt{
+    width:60%;    
+    background: white;
+}
+
+#rt2{
+    width:60%; 
+    background: white;
+      margin-bottom: 6px;
+}
